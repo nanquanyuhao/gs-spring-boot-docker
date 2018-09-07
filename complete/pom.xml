@@ -32,10 +32,10 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.3.6</version>
+                <version>1.4.4</version>
                 <configuration>
-		    <!-- <username>nanquanyuhao</username>
-		    <password>jxfa0786431</password> -->
+		    <username>nanquanyuhao</username>
+		    <password>jxfa0786431</password>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>mvn-auto</tag>
 					<buildArgs>
