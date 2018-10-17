@@ -34,18 +34,16 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.4</version>
                 <configuration>
-		    <username>nanquanyuhao</username>
-		    <password>jxfa0786431</password>
+                    <username>nanquanyuhao</username>
+                    <password>jxfa0786431</password>
                     <repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<tag>mvn-auto</tag>
-					<buildArgs>
-                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
-                    </buildArgs>
                 </configuration>
             </plugin>
             <!-- end::plugin[] -->
 
-            <!-- <plugin>
+            <!-- tag::unpack[] -->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
@@ -66,7 +64,8 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
+            <!-- end::unpack[] -->
         </plugins>
     </build>
 
